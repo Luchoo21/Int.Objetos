@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyListener;
 
-public class Login extends JFrame{
+public class Login extends JFrame {
     private JTextField JTFUsuario;
     private JPanel panel1;
     private JPasswordField JPFContra;
@@ -20,7 +20,7 @@ public class Login extends JFrame{
             // Configuracion Ventana
             frame = new JFrame("Sistema de reserva de turnos");
             frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            frame.setPreferredSize(new Dimension(256,256));
+            frame.setPreferredSize(new Dimension(356,256));
             frame.setResizable(false);
             frame.getContentPane().setBackground(new Color(100,100,100));
 
@@ -62,9 +62,10 @@ public class Login extends JFrame{
             registrarseButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    dispose();
+                    new AltaUsuario().setVisible(true);
                 }
             });
-
     }
 
     public static void main(String[] args) {

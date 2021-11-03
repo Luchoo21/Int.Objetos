@@ -10,11 +10,12 @@ public class MenuPrincipal extends JFrame implements ActionListener {
     private JTextField ventana;
     private JLabel label1, label2;
     private JButton boton1;
+
     public static String texto =" ";
 
     public MenuPrincipal(){
         setLayout(null);
-        setSize(500,600);
+        setSize(356,356);
         setTitle("Bienvenido Al Sistema de turnos");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -40,4 +41,3 @@ public class MenuPrincipal extends JFrame implements ActionListener {
 
     }
 }
-
